@@ -17,6 +17,25 @@ function addToCollection (collection, title, artist, yearPublished ){
 addToCollection (myCollection, 'Red', 'Taylor Swift', 2012);
 console.log ('myCollection with Taylor Swift album: ', myCollection)
 
+
+//Add 6 albums to the myCollection array. 
+  //console.log each album as added using the function's returned value.
+  // After all are added, console.log the myCollection array.
+ 
+  console.log( addToCollection (myCollection, 'The White Album', 'The Beatles', 1968));
+
+  console.log( addToCollection (myCollection, 'Fly', 'The Chicks', 1999));
+
+  console.log( addToCollection (myCollection, 'Dookie', 'Green Day', 1994));
+
+  console.log( addToCollection (myCollection, 'Gaslighter', 'The Chicks', 2020));
+
+  console.log( addToCollection (myCollection, 'Speak Now', 'Taylor Swift', 2010));
+
+  console.log( addToCollection (myCollection, 'Let it Bleed', 'The Rolling Stones', 1969));
+
+  console.log ( 'My complete myCollection array:', myCollection);
+
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
