@@ -45,15 +45,14 @@ console.log ('myCollection with Taylor Swift album: ', myCollection)
 
 
 function showCollection (collection){
-  console.log( 'in showCollection');
+  //console.log( 'in showCollection');
   for (let i = 0; i < collection.length; i++){
-    
-   console.log( collection[i].title + ' by ' + collection[i].artist + ', published in ' + collection[i].yearPublished);
+    console.log( `${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}` );
   }
-  return true;
+  //return true;
   }
 
-console.log ('confirming function ran:', showCollection(myCollection));
+showCollection(myCollection);
 
 
 function findByArtist (collection, artist){
@@ -69,6 +68,7 @@ function findByArtist (collection, artist){
 
 console.log( 'Is Taylor Swift in myCollection?', findByArtist (myCollection, 'Taylor Swift'));
 console.log( 'Is Ed Sheeran in myCollection?', findByArtist (myCollection, 'Ed Sheeran'));
+
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
