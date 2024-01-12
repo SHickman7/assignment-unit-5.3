@@ -70,6 +70,14 @@ console.log( 'Is Taylor Swift in myCollection?', findByArtist (myCollection, 'Ta
 console.log( 'Is Ed Sheeran in myCollection?', findByArtist (myCollection, 'Ed Sheeran'));
 
 
+// Create a function called search that will allow for searching by artist and yearPublished
+
+function search ( collection, searchCriteria ){
+
+
+}
+
+
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
