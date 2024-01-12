@@ -48,13 +48,27 @@ function showCollection (collection){
   console.log( 'in showCollection');
   for (let i = 0; i < collection.length; i++){
     
-   console.log( collection[i].title + ' by ' + collection[i].artist + ', published in ' + collection[i].yearPublished + '.');
+   console.log( collection[i].title + ' by ' + collection[i].artist + ', published in ' + collection[i].yearPublished);
   }
   return true;
   }
 
 console.log ('confirming function ran:', showCollection(myCollection));
 
+
+function findByArtist (collection, artist){
+  console.log ('in findByArtist');
+  let matchingArtists = [ ];
+  for (let i = 0; i < collection.length; i++) {
+    if (collection[i].artist === artist){
+    matchingArtists.push(collection[i])
+    }
+  } return matchingArtists;
+
+}
+
+console.log( 'Is Taylor Swift in myCollection?', findByArtist (myCollection, 'Taylor Swift'));
+console.log( 'Is Ed Sheeran in myCollection?', findByArtist (myCollection, 'Ed Sheeran'));
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
